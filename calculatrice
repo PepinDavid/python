@@ -1,0 +1,40 @@
+#on a le message de bienvenue dans la calculatrice
+def main():
+    #creation de la variable username pour s'indentifier
+    global result1
+    username = 'David'
+    conexion = input("Entrer votre prénom")
+
+
+
+    print("Salut " + username + " bienvenue dans la calculatrice")
+    print("Quel nombre voulez vous calculer ?")
+    #choisir un nombre
+    chiffre1 = int(input("Entrer votre chiffre"))
+    #choisir le deuxieme nombre
+    chiffre2 = int(input("Entrer le deuxième chiffre"))
+    #l'opération que la personne veut
+    operation = input("Souhaitez-vous : additioner, soustraire, diviser ou multipliez ? Choisissez le signe. (+, -,/,*)")
+    #opration pour +
+    if operation == "+":
+        result1 = (chiffre1 + chiffre2)
+        print("Le resultat est de " + str(result1))
+    #opration pour -
+    if operation == "-":
+        result2 = (chiffre1 - chiffre2)
+        print("Le resultat est de " + str(result2))
+    #opration pour /
+    if operation == "/":
+        result3 = (chiffre1 / chiffre2)
+        print("Le resultat est de " + str(result3))
+    if operation == "*":
+        result4 = (chiffre1 * chiffre2)
+        print("Le resultat est de " + str(result4))
+
+
+
+
+
+
+if __name__=='__main__':
+    main()
